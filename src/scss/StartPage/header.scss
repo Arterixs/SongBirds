@@ -1,0 +1,67 @@
+.header {
+  margin-bottom: 25px;
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+  }
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__line {
+    background: $color-header;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+
+.title {
+  margin: 0;
+  @include gradient;
+  font-size: 46px;
+}
+
+.score {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  gap: 10px;
+  &__title {
+    @include gradient;
+  }
+
+  &__amount {
+    @include gradient;
+    width: 40px;
+    text-align: center;
+  }
+}
+
+.list-progress {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  flex-wrap: wrap;
+
+  .active-chapter {
+    background-color: $color-background-active-chapter;
+  }
+}
+
+.list-item-progress {
+  display: block;
+  flex: auto;
+  padding-top: 3.25px;
+  height: 25px;
+  width: 140px;
+  text-align: center;
+  border: 1px solid #007c5d;
+}
+
