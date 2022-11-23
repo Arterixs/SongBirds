@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songbird</title>
+</head>
+<body>
+  <div class="app">
+    <div class="app__wrap">
+      <header class="header">
+        <div class="header__logo">
+          <h1 class="title">SongBirds</h1>
+          <div class="score">
+            <p class="score__title">Score:</p>
+            <p class="score__amount">0</p>
+          </div>
+        </div>
+        <div class="header__line">
+          <ul class="list-progress">
+            <li class="list-item-progress">Разминка</li>
+            <li class="list-item-progress">Воробьиные</li>
+            <li class="list-item-progress">Лесные птицы</li>
+            <li class="list-item-progress">Певчие птицы</li>
+            <li class="list-item-progress">Хищные птицы</li>
+            <li class="list-item-progress">Морские птицы</li>
+          </ul>
+        </div>
+      </header>
+      <main class = "main">
+        <div class="main__game">
+          <div class="main__block">
+            <div class="image-block">
+              <img src="./assets/images/png/inkognito.png" alt="bird" class = "image-block__img">
+            </div>
+            <div class="player">
+              <div class="player__name">
+                <p class="player__name-bird">******</p>
+              </div>
+              <div class="player__audio">
+                <button class="play">
+                  <span class="play__img"></span>
+                </button>
+                <div class="audio">
+                  <input type="range" class="audioplayer" value = '0'>
+                  <div class="duration">
+                    <p class="duration__start">00:00</p>
+                    <p class="duration__finish">00:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__block-category">
+            <div class="options">
+              <ul class="options-bird">
+                <li class="options-bird__list-item">
+                  <span class="symbol"></span>
+                  Ворон
+                </li>
+                <li class="options-bird__list-item">
+                  <span class="symbol"></span>
+                  Журавль
+                </li>
+                <li class="options-bird__list-item">
+                  <span class="symbol"></span>
+                  Ласточка
+                </li>
+                <li class="options-bird__list-item">
+                  <span class="symbol"></span>
+                  Кукрыниксы
+                </li>
+                <li class="options-bird__list-item">
+                  <span class="symbol"></span>
+                  Василий
+                </li>
+                <li class="options-bird__list-item">
+                  <span class="symbol"></span>
+                  Идрак
+                </li>
+              </ul>
+            </div>
+            <div class="info">
+              <div class="info__content">
+                <p class="instructions">
+                  <span class="instructions__text">Прослушайте плеер.</span>
+                  <span class="instructions__text">Выберите птицу из списка.</span>
+                </p>
+                <div class="info__card">
+                  <div class="card">
+                    <img src="" alt="" class = "card__image">
+                    <div class="card-content">
+                      <p class="card-content__name">Ласточка</p>
+                      <p class="card-content__en-name">Delichon urbicum</p>
+                      <div class="card-control">
+                        <button class="play">
+                          <span class="play__img"></span>
+                        </button>
+                        <div class="audio">
+                          <input type="range" class="audioplayer-small">
+                          <div class="duration-audio">
+                            <p class="duration-audio__start">00:00</p>
+                            <p class="duration-audio__finish">00:00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="info__text">Для ласточек характерно негромкое щебетание. 
+                    Песни ласточек не смолкают на протяжении всего лета. Исследователи 
+                    различают у птиц до 6 щебечущих звуков: «вит», «ви-вит», «чивит», 
+                    «чиривит» и т.п. Ласточки любят петь дуэтом.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__button-next">
+            <button class="next">
+              <span class="next__content">Next level</span>
+            </button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrap">
+          <a href="https://github.com/Arterixs" class="link">
+            <img src="./assets/images/png/github.png" alt="github" class="git-logo">
+          </a>
+          <p class="years">2022</p>
+          <a href="https://rs.school/js/" class="link">
+            <img src="./assets/images/svg/rs_school_js.svg" alt="logo-school" class="rs-logo">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
