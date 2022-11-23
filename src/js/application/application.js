@@ -246,10 +246,11 @@ export class Application extends Control {
 
   galleryCycle(nodeCreate) {
     const galleryPage = new GalleryPage(nodeCreate)
+    const galleryContent = galleryPage.content
     this.objComponents.header.headerLine.node.classList.add('none')
     this.objComponents.header.header.node.classList.add('margin-none')
     this.objComponents.header.headerLogo.node.classList.add('margin-none')
-    const arrayAudio = galleryPage.arrAudio
+    const arrayAudio = galleryContent.arrayAudio
     const arrAudioPlay = []
     const arrSpanPlay = []
 
@@ -264,7 +265,7 @@ export class Application extends Control {
       this.startPageCycle()
     }
 
-    galleryPage.onPlayGallery = (audio, span) => {
+    galleryContent.onPlayGallery = (audio, span) => {
       if (arrAudioPlay.length > 1) {
         arrAudioPlay.shift()
         arrSpanPlay.shift()
@@ -296,7 +297,7 @@ export class Application extends Control {
       }
     }
 
-    galleryPage.onClickInput = (audio, input) => {
+    galleryContent.onClickInput = (audio, input) => {
       const range = input.value
       const cords = range / 100
       const duration = audio.duration
